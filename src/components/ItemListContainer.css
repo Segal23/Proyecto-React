@@ -1,0 +1,15 @@
+.container-main{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    font-size: 36px;
+}
+
+@media only screen and (max-width: 480px) {
+    .container-main{
+        p{
+            text-align: center;
+            text-wrap: balance;
+        }
+}
+}

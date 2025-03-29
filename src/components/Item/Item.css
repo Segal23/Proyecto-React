@@ -1,0 +1,25 @@
+.card{
+    background-color: #FF139655;
+    width: 260px;
+    height: 580px;
+
+    .card-title{
+        font-size: 14px;
+        height: 30px;
+    }
+
+    .card-text{
+        font-size: 16px;
+        height: 180px;
+    }
+
+    .btn{
+        background-color: #FF1396DD;
+        color: #FFFFFF;
+        border: 1px solid #AAAAAA;
+        border-radius: 5px;
+        &:hover{
+            background-color: #FF1396;
+        }
+    }
+}

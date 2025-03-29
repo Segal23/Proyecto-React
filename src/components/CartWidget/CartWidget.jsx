@@ -1,4 +1,4 @@
-import cartIcon from '../assets/cart_icon.png'
+import cartIcon from '../../assets/cart_icon.png'
 import './CartWidget.css'
 
 function CartWidget(){

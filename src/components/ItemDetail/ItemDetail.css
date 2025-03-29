@@ -1,0 +1,38 @@
+.item_detail{
+    width: 90%;
+    height: 25%;
+    flex-direction: row;
+    padding: 50px 100px;
+    background-color:transparent;
+    border: none;
+
+    .card-img-top{
+        width: 50%
+
+    }
+
+    .card-title{
+        font-size: 24px;
+        padding-left: 100px;
+    }
+    .card-text{
+        padding-left: 100px;
+    }
+
+    .container-addcarrito{
+        padding-left: 100px;
+        display: flex;
+
+        .btn-addcarrito{
+            margin-left: 20px;
+            height: 40px;
+            background-color: #FF1396DD;
+            color: #FFFFFF;
+            border: 1px solid #E5E5E5;
+            border-radius: 5px;
+            &:hover{
+                background-color: #FF1396;
+            }
+        }
+    }
+}

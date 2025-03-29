@@ -1,0 +1,37 @@
+.container-itemcount{
+    display: flex;
+    align-items: center;
+    
+    input{
+        height: 40px;
+        width: 50px;
+        border: 1px solid #FF139688;
+        border-left: none;
+        border-right: none;
+        text-align: center;
+    }
+
+    .btn-down, .btn-up{
+        height: 40px;
+        width: 30px;
+        background-color: #FFFFFF;
+        border: 1px solid #FF139688;
+        &:hover{
+            border: 1px solid #FF1396;
+            color: #FF1396;
+        }
+    }
+
+    .btn-down{
+        border-right: none;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .btn-up{
+        border-left: none;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+
+    }
+}

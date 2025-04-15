@@ -1,6 +1,5 @@
 import './ItemListContainer.css';
 import ItemList from '../ItemList/ItemList';
-import Container from 'react-bootstrap/Container';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
@@ -19,7 +18,6 @@ function ItemListContainer({itemListText}){
 
     return(
         <div className='container-main'>
-            {/* {items.map(item => <Item img={item.thumbnail} title={item.title} text={item.description} key={item.id}></Item>)} */}
             <ItemList items={itemList} />
         </div>    
     )

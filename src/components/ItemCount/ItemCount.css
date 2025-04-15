@@ -34,4 +34,17 @@
         border-bottom-right-radius: 8px;
 
     }
+
+    .btn-addcarrito{
+        margin-left: 20px;
+        height: 40px;
+        min-width: 150px;
+        background-color: #FF1396DD;
+        color: #FFFFFF;
+        border: 1px solid #E5E5E5;
+        border-radius: 5px;
+        &:hover{
+            background-color: #FF1396;
+        }
+    }
 }

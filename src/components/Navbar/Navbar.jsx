@@ -22,15 +22,17 @@ function NavBar(){
         <Navbar bg="dark" data-bs-theme="dark">
             <Container fluid className="navbar-container"> 
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-start">
-                    <Navbar.Brand>
-                        <img
-                            alt=""
-                            src={logo}
-                            width="100"
-                            height="50"
-                            className="d-inline-block align-top"
-                            />{' '}
-                    </Navbar.Brand>
+                    <Nav.Link to='/' as={NavLink}> 
+                        <Navbar.Brand>
+                            <img
+                                alt=""
+                                src={logo}
+                                width="100"
+                                height="50"
+                                className="d-inline-block align-top"
+                                />{' '}
+                        </Navbar.Brand>
+                    </Nav.Link>
                 </Navbar.Collapse>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">

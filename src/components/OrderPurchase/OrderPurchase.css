@@ -1,0 +1,14 @@
+.container-formPurchase{
+    width: 50vw;
+    justify-self: center;
+    margin: 50px 0;
+    
+    .btn-primary{
+        background-color: #FF1396DD;
+        border: 1px solid #E5E5E5;
+
+        &:hover{
+            background-color: #FF1396;
+        }
+    }
+}

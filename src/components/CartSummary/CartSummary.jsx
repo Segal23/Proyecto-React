@@ -1,7 +1,7 @@
 import './CartSummary.css';
 import { useContext } from 'react';
 import { CartContext } from '../../context/CartContext';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function CartSummary(){
 

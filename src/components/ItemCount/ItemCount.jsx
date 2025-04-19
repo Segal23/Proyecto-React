@@ -1,11 +1,11 @@
 import './ItemCount.css';
 import { useState, useContext } from 'react';
 import { CartContext } from '../../context/CartContext';
+import { Slide, toast} from 'react-toastify';
 
 function ItemCount({product = {}, addCartBtn = true, style = {}, value = 1, onCountChange}){
 
     const {addProduct} = useContext(CartContext);
-
     const [count, setCount] = useState(value);
 
     const handleCountDown = () => {
@@ -19,7 +19,22 @@ function ItemCount({product = {}, addCartBtn = true, style = {}, value = 1, onCo
         setCount(count +1);
         onCountChange?.(count +1);} ;
     
-    const handleAddProduct = () => addProduct({...product, cantidad: count})
+    const handleAddProduct = () => {
+        const alreadyInCart = addProduct({...product, cantidad: count})
+
+        if (alreadyInCart){
+            const customId = "custom-id";
+            toast.error('El producto ya se encuentra en el carrito',{
+                            position: 'bottom-center',
+                            autoClose: 1000,
+                            hideProgressBar: true,
+                            transition: Slide,
+                            closeOnClick: true,
+                            toastId: customId,
+                        });
+        }
+    }
+
 
     return(
         <div className='container-itemcount'>

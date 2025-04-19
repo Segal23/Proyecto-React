@@ -1,0 +1,11 @@
+.customToast{
+    width: 380px;
+    background: linear-gradient(to bottom left, #ec128fcc, #888888) ;
+    color: #FFFFFFDD;
+
+    .Toastify__toast-icon{
+        svg {
+            fill: #FF0000;
+        }
+    }
+}

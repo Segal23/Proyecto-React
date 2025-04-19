@@ -4,20 +4,26 @@
 
     .card{
         background-color: #FF139655;
-        width: 260px;
+        width: 300px;
         height: 580px;
+        
+        img{
+            height: 250px;
+        }
 
         .card-title{
-            font-size: 14px;
+            font-size: 12px;
             height: 30px;
         }
 
         .card-text{
-            font-size: 16px;
+            font-size: 14px;
             height: 180px;
+            text-align: start;
         }
 
         .btn{
+            margin-top: 20px;
             background-color: #FF1396DD;
             color: #FFFFFF;
             border: 1px solid #AAAAAA;

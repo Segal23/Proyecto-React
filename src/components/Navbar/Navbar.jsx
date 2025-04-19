@@ -7,16 +7,17 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { NavLink } from 'react-router-dom';
+import { getCategories } from '../../firebase/db';
 
 function NavBar(){
     
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {
-        fetch('https://dummyjson.com/products/category-list')
-        .then(res => res.json())
-        .then(res => setCategories(res));
+        getCategories()
+        .then(data => setCategories(data))
     },[])
+
 
     return (
         <Navbar bg="dark" data-bs-theme="dark">

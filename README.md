@@ -54,7 +54,7 @@
 1. Cloná el repositorio:
 
 ```bash
-git clone https://github.com/tu-usuario/gofix-ecommerce.git
+git clone https://github.com/Segal23/Proyecto-React.git
 ```
 
 2. Instalá las dependencias:

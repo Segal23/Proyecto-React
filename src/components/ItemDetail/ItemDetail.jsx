@@ -1,10 +1,10 @@
 import './ItemDetail.css';
 import ItemCount from '../ItemCount/ItemCount';
 import { Container } from 'react-bootstrap';
-import Card from 'react-bootstrap/Card';
+import Card from 'react-bootstrap/Card'
+import { formatoMoneda } from '../../utils/utilities';
 
-function ItemDetail({item}){
-    
+function ItemDetail({item}){    
     return(
     <Container fluid className='container-detail'>
         <Card className='item_detail mx-auto'>
@@ -13,6 +13,9 @@ function ItemDetail({item}){
                 <Card.Title>{item.title}</Card.Title>
                 <Card.Text>
                     {item.description}
+                </Card.Text>
+                <Card.Text>
+                    <span className='span-price'>{formatoMoneda('ARS',item.price)}</span>
                 </Card.Text>
                 <Container className='container-addcarrito'>
                     <ItemCount className='itemcount' product={item}/>

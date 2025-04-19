@@ -4,6 +4,7 @@ import { useContext, useEffect, useState } from 'react';
 import ItemCount from '../ItemCount/ItemCount';
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
+import { formatoMoneda } from '../../utils/utilities';
 
 function CartDetail(){
 
@@ -57,7 +58,7 @@ function CartDetail(){
                                             </ItemCount>
                                         </div>
                                         <div className='total-producto'>
-                                            <p>${(prod.price*prod.cantidad).toFixed(2)}</p>
+                                            <p>{formatoMoneda('ARS', (prod.price*prod.cantidad).toFixed(2))}</p>
                                         </div>
                                     </div>
                                     <div className='separator'></div>

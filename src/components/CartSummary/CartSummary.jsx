@@ -2,6 +2,7 @@ import './CartSummary.css';
 import { useContext } from 'react';
 import { CartContext } from '../../context/CartContext';
 import { useNavigate } from 'react-router-dom';
+import { formatoMoneda } from '../../utils/utilities';
 
 function CartSummary(){
 
@@ -17,7 +18,7 @@ function CartSummary(){
             <div className="summary-separator"></div>
             <div className='container-amount'>
                 <p>Total</p>
-                <p>${cartTotalAmount()}</p>
+                <p>{formatoMoneda('ARS',cartTotalAmount())}</p>
             </div>
             <div className='container-purchasebutton'>
                 <button onClick={()=>navigate('/purchase')}>Enviar Orden</button>

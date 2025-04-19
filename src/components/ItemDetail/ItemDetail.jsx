@@ -2,9 +2,15 @@ import './ItemDetail.css';
 import ItemCount from '../ItemCount/ItemCount';
 import { Container } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card'
-import { formatoMoneda } from '../../utils/utilities';
 
-function ItemDetail({item}){    
+function ItemDetail({item}){
+
+    function formatoMoneda(moneda, valor){
+        let currencyFormat = new Intl.NumberFormat('es-AR', {style: 'currency', minimumFractionDigits: 2, currency: moneda});
+        return currencyFormat.format(valor);
+    }
+    
+    
     return(
     <Container fluid className='container-detail'>
         <Card className='item_detail mx-auto'>
